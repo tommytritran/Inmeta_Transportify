@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7179b0-71be-4049-8065-95c5257f63a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Controller/OrderDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Controller/Repositories/ServiceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Controller/ServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Model/SalesEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Model/SalesEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Model/Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Controller/OrderDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Controller/OrderDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Controller/Repositories/ServiceRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Controller/ServiceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Model/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Model/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Model/SalesEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Model/SalesEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Model/Service.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,15 +15,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Model/OrderDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            <state relative-caret-position="706">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1017#1018#0" expanded="true" />
                 <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
                 <element signature="e#1527#1528#0" expanded="true" />
                 <element signature="e#1592#1593#0" expanded="true" />
                 <element signature="e#1642#1643#0" expanded="true" />
@@ -54,16 +42,17 @@
                 <element signature="e#1760#1761#0" expanded="true" />
                 <element signature="e#1443#1444#0" expanded="true" />
                 <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#2973#2974#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Controller/OrderDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+            <state relative-caret-position="511">
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#336#337#0" expanded="true" />
@@ -280,7 +269,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549134774594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549136342035" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -327,12 +316,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549065172104</updated>
-      <workItem from="1549065175186" duration="25999000" />
+      <workItem from="1549065175186" duration="27546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25999000" />
+    <option name="totallyTimeSpent" value="27546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2261" y="-734" width="1131" height="1417" extended-state="0" />
@@ -356,7 +345,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32981133" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.32981133" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -573,28 +562,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Controller/OrderDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Model/OrderDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="706">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1017#1018#0" expanded="true" />
             <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
             <element signature="e#1527#1528#0" expanded="true" />
             <element signature="e#1592#1593#0" expanded="true" />
             <element signature="e#1642#1643#0" expanded="true" />
@@ -612,6 +588,21 @@
             <element signature="e#1760#1761#0" expanded="true" />
             <element signature="e#1443#1444#0" expanded="true" />
             <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#2973#2974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Controller/OrderDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>

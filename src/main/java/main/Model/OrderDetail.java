@@ -132,5 +132,7 @@ public class OrderDetail {
         this.comment = comment;
     }
 
-
+    public String toString(){
+        return "customer: " + this.customer.getFirstName();
+    }
 }
