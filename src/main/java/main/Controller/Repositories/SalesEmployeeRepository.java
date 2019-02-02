@@ -1,20 +1,14 @@
-package main.Controller;
+package main.Controller.Repositories;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import main.Model.*;
 
-import java.util.List;
 
+//Interface to handle storage, retrieval and search behavior for sales employee object from DB
 
 @Repository
 public interface SalesEmployeeRepository extends JpaRepository<SalesEmployee, Integer> {
-
-    //Returns all the employees
-    List<SalesEmployee> findAll();
-
-    //Returns one specific employee based on ID
-
 
 }

@@ -1,6 +1,8 @@
 package main.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,8 +13,10 @@ public class SalesEmployee {
     @GeneratedValue(strategy =  GenerationType.AUTO)
     private int employee_id;
     @Column(name = "first_name")
+    @JsonProperty("first_name")
     private String firstName;
     @Column(name = "last_name")
+    @JsonProperty("last_name")
     private String lastName;
 
     public SalesEmployee() {
