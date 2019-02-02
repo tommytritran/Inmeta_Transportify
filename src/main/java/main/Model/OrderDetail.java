@@ -5,59 +5,91 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "order_detail")
 public class OrderDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int order_id;
 
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private SalesEmployee salesEmployee;
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
+    @Column(name = "service")
+    @JsonProperty("service")
+    private String service;
+
+    @Column(name = "receiver_name")
+    @JsonProperty("receiver_name")
+    private String receiverName;
+
     @Column(name = "address_from")
     @JsonProperty("address_from")
     private String addressFrom;
 
-    @Column(name = "zip_from")
-    @JsonProperty("zip_from")
-    private int zipFrom;
-
-    @Column(name = "city_from")
-    @JsonProperty("city_from")
-    private String cityFrom;
 
     @Column(name = "address_to")
     @JsonProperty("address_to")
     private String addressTo;
 
-    @Column(name = "zip_to")
-    @JsonProperty("zip_to")
-    private int zipTo;
-
-    @Column(name = "city_to")
-    @JsonProperty("city_to")
-    private String cityTo;
-
     @Column(name = "date")
     @JsonProperty("date")
     private String date;
 
-    @Column(name = "description")
-    @JsonProperty("description")
-    private String description;
+    @Column(name = "comment")
+    @JsonProperty("comment")
+    private String comment;
 
 
     public OrderDetail() {
+        System.out.println("empty constructor order detail");
     }
 
-    public OrderDetail(String addressFrom, int zipFrom, String cityFrom, String addressTo, int zipTo, String cityTo, String date, String description) {
+    public OrderDetail(String service, String receiverName, String addressFrom,  String addressTo, String date, String comment) {
+        this.service = service;
+        this.receiverName = receiverName;
         this.addressFrom = addressFrom;
-        this.zipFrom = zipFrom;
-        this.cityFrom = cityFrom;
         this.addressTo = addressTo;
-        this.zipTo = zipTo;
-        this.cityTo = cityTo;
         this.date = date;
-        this.description = description;
+        this.comment = comment;
     }
 
+    public SalesEmployee getSalesEmployee() {
+        return salesEmployee;
+    }
+
+    public void setSalesEmployee(SalesEmployee salesEmployee) {
+        this.salesEmployee = salesEmployee;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
+    }
+
+    public String getReceiverName() {
+        return receiverName;
+    }
+
+    public void setReceiverName(String receiverName) {
+        this.receiverName = receiverName;
+    }
 
     public int getOrder_id() {
         return order_id;
@@ -75,22 +107,6 @@ public class OrderDetail {
         this.addressFrom = addressFrom;
     }
 
-    public int getZipFrom() {
-        return zipFrom;
-    }
-
-    public void setZipFrom(int zipFrom) {
-        this.zipFrom = zipFrom;
-    }
-
-    public String getCityFrom() {
-        return cityFrom;
-    }
-
-    public void setCityFrom(String cityFrom) {
-        this.cityFrom = cityFrom;
-    }
-
     public String getAddressTo() {
         return addressTo;
     }
@@ -99,21 +115,6 @@ public class OrderDetail {
         this.addressTo = addressTo;
     }
 
-    public int getZipTo() {
-        return zipTo;
-    }
-
-    public void setZipTo(int zipTo) {
-        this.zipTo = zipTo;
-    }
-
-    public String getCityTo() {
-        return cityTo;
-    }
-
-    public void setCityTo(String cityTo) {
-        this.cityTo = cityTo;
-    }
 
     public String getDate() {
         return date;
@@ -123,11 +124,13 @@ public class OrderDetail {
         this.date = date;
     }
 
-    public String getDescription() {
-        return description;
+    public String getComment() {
+        return comment;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
+
+
 }

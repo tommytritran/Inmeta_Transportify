@@ -4,6 +4,9 @@ package main.Model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "sales_employee")
@@ -12,9 +15,12 @@ public class SalesEmployee {
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
     private int employee_id;
+
+
     @Column(name = "first_name")
     @JsonProperty("first_name")
     private String firstName;
+
     @Column(name = "last_name")
     @JsonProperty("last_name")
     private String lastName;

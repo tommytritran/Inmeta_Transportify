@@ -6,6 +6,9 @@ import main.Controller.Repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Set;
 
 @Entity
 public class Customer {
@@ -33,12 +36,14 @@ public class Customer {
     public Customer() {
     }
 
+
     public Customer(String firstName, String lasttName, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lasttName = lasttName;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
 
     public int getCustomer_id() {
         return customer_id;
