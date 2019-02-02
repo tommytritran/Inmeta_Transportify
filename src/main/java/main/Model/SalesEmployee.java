@@ -51,9 +51,4 @@ public class SalesEmployee {
         this.lastName = lastName;
     }
 
-    @Override
-    public String toString() {
-        return "employee_id: " + this.employee_id + "\n" +
-                "first name: " + this.firstName;
-    }
 }
