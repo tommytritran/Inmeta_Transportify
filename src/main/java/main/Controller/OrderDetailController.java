@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -29,9 +30,22 @@ public class OrderDetailController {
 
 
     //Gets a list of all orders in the order table
-    @GetMapping("/orders")
+    @GetMapping("/orders/{employee_id}")
     public List<OrderDetail> getAllOrders(){
         return orderDetailRepository.findAll();
+    }
+
+    //Get a list of all orders based on employee_id from order table
+    @GetMapping("/{employee_id}/orders")
+    public List<OrderDetail> getEmployeeOrders(@PathVariable int employee_id){
+        List<OrderDetail> orderList = orderDetailRepository.findAll();
+        List<OrderDetail> employeeOrderList = new ArrayList<>();
+        for(OrderDetail od : orderList){
+            if(od.getSalesEmployee().getEmployee_id() == employee_id){
+                employeeOrderList.add(od);
+            }
+        }
+        return employeeOrderList;
     }
 
     //Gets a specific order based on order_id
@@ -73,7 +87,8 @@ public class OrderDetailController {
     }
 
 
-    public String getDate(){
+    //Local function to get current date of the system
+    private String getDate(){
           DateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
           Date date = new Date();
           return df.format(date);
