@@ -31,11 +31,11 @@ class NewOrder extends Component{
                     <label><h2>Existing Customers</h2></label>
                     <select className="form-control">
                         {this.state.customers.map(customer => (
-                            <option key={customer.id}>{customer.first_name}</option>
-                        ))};
+                            <option key={customer.customer_id} value={customer.customer_id}>{customer.first_name} {customer.last_name} || email: {customer.email}</option>
+                        ))}
                     </select>
                 </div>
-                <a className="btn-floating btn-large deep-purple accent-2 right"><i className="material-icons">add</i></a>
+                <button className="btn-floating btn-large deep-purple accent-2 right"><i className="material-icons">add</i></button>
             </div>
         );
     }
