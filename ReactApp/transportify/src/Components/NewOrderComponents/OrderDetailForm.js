@@ -5,7 +5,8 @@ export default class OrderDetailForm extends Component {
     return (
       <div>
         <form>
-            <h2>Order Information</h2>
+        <br></br>
+            <label><h2>Order Information</h2></label>
             <div className="form-group">
                 <input type="text" className="form-controll" placeholder="Receiver name" ></input>
             </div>
