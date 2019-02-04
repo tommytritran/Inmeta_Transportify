@@ -4,9 +4,8 @@ package main.Model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+
+//Data model to hold an Sales employee data
 
 @Entity
 @Table(name = "sales_employee")

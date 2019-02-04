@@ -2,14 +2,10 @@ package main.Model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import main.Controller.Repositories.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Set;
 
+//Data model to hold an Customer data
 @Entity
 public class Customer {
 

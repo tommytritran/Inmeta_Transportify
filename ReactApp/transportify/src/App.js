@@ -11,8 +11,6 @@ import Home from "./Components/Home";
 //Order component
 import NewOrder from "./Components/NewOrder";
 
-//OrderList component
-import OrderList from "./Components/OrderList";
 
 
 class App extends Component {
@@ -23,7 +21,6 @@ class App extends Component {
         <NavBar />
         <Route exact path={"/"} component={Home}></Route>
         <Route exact path={"/NewOrder"} component={NewOrder}></Route>
-        <Route exact path={"/OrderList"} component={OrderList}></Route>
       </div>
       </BrowserRouter>
     );

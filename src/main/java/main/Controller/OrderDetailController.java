@@ -30,7 +30,7 @@ public class OrderDetailController {
 
 
     //Gets a list of all orders in the order table
-    @GetMapping("/orders/{employee_id}")
+    @GetMapping("/orders")
     public List<OrderDetail> getAllOrders(){
         return orderDetailRepository.findAll();
     }

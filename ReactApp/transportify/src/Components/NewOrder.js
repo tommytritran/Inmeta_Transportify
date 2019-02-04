@@ -4,38 +4,40 @@ Add button will pop up modal view to add new customer info
 */
 
 import React, { Component } from 'react';
-class NewOrder extends Component{
 
-    constructor(){
-        super();
+//Loads a dropdown list of all the current customers
+import ExistingCustomerList from './NewOrderComponents/ExistingCustomerList';
+
+import OrderDetailForm from './NewOrderComponents/OrderDetailForm';
+
+class NewOrder extends Component{
+    constructor(props){
+        super(props);
         this.state = {
-            customers: []
+            isCustomerSelected: false,
+            customerSelected:[]
         };
     }
 
-    componentDidMount(){
-        fetch('http://localhost:8080/customers')
-            .then(res => res.json())
-            .then(json =>{
-                this.setState({
-                    customers:json
-                })
-            });
+
+    //Handels input from child components, makes it able to handle which component to show on main order module page
+    handler = (customerSelected) =>{
+        this.setState({isCustomerSelected:true});
+        console.log(customerSelected);
     }
+
 
     render(){
         return (
             <div className="container">
-            <br></br>
-                <div className="form-group">
-                    <label><h2>Existing Customers</h2></label>
-                    <select className="form-control">
-                        {this.state.customers.map(customer => (
-                            <option key={customer.customer_id} value={customer.customer_id}>{customer.first_name} {customer.last_name} || email: {customer.email}</option>
-                        ))}
-                    </select>
-                </div>
-                <button className="btn-floating btn-large deep-purple accent-2 right"><i className="material-icons">add</i></button>
+                {!this.state.isCustomerSelected &&(
+                    //Adds the dropdown list with existing customer and possibility to add new customers, sends in paramterer to dismiss this component
+                    <ExistingCustomerList customerSelected = {this.handler}/>
+                )}
+                {this.state.isCustomerSelected &&(
+                    //When customer is set, customer selection view gets dismissed and this component gets loaded, gives a form to input order details
+                    <OrderDetailForm />
+                )}
             </div>
         );
     }

@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 
+//Data model to hold an Order data
+
 @Entity
 @Table(name = "order_detail")
 public class OrderDetail {
